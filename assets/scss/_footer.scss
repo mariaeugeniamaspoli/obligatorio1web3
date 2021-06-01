@@ -1,0 +1,35 @@
+footer{
+    ul{
+        @extend  .list-unstyled;
+        @extend .d-inline-block;
+
+        li:not(.social-media){
+            @extend .my-1;
+
+            
+        p{
+            opacity: .4;
+        }
+        }
+    }
+    .social-media{
+        li{
+            display: inline;
+        }
+    }
+    i{
+        font-size: 3rem;
+    }
+    h6{
+        @extend .o-50
+    }
+    a{
+        color: $body-color;
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+
+        &:hover{
+            color: $primary !important;
+        }
+    }
+}

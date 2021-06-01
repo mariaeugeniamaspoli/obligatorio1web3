@@ -1,0 +1,32 @@
+.accordion-button{
+    color: $primary !important;
+    border-radius: 0.3rem 0.3rem 0rem 0rem !important;
+
+
+    &.collapsed{
+        background-color: $secondary !important;
+        border: none !important;
+    }
+
+    &:not(.collapsed){
+        background-color: $primary !important;
+        color: $white !important;
+    }
+}
+
+.accordion-item{
+    background-color: $secondary !important;
+
+    li::before {
+        content: "\2022";
+        color: $primary;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -3em;
+      }
+}
+
+.accordion-collapse{
+    background-color: $white;
+}

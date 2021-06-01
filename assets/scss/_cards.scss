@@ -1,0 +1,20 @@
+.card{
+  background-color: $secondary !important;
+}
+
+
+#categories{
+    @extend .text-primary;
+    @extend .text-uppercase;
+    @extend .fw-bold;
+    @extend .text-decoration-none;
+
+}
+
+.card-link {
+  background-color: $secondary;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: $white;
+    }
+  }

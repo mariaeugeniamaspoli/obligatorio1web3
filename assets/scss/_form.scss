@@ -1,0 +1,37 @@
+
+
+@mixin make-container() {
+    max-width: 500px;
+    @extend .py-3;
+    @extend .p-2;
+    @extend .px-md-4;
+    @extend .bg-secondary;
+    @extend .d-flex; 
+    @extend .flex-column;
+    @extend .mx-auto;
+    @extend .my-md-6;
+    @extend .my-2;
+  }
+  
+  .custom-container {
+    @include make-container();
+
+    a{
+        text-decoration: none;
+    }
+    .btn{
+        width: 100%;
+    }
+    input{
+      @extend .py-1;
+      background-color: #d2d2d2 !important;
+      border: none !important;
+
+      &:checked{
+          background-color: $primary !important;
+      }
+    }
+    h6{
+        font-size: small
+    }
+  };

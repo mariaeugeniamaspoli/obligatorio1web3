@@ -1,0 +1,16 @@
+/*.carousel-caption{
+    background-color: black;
+}
+*/
+
+
+.carousel-caption{
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0)), url(images/background.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 0% !important;
+    bottom: 0rem !important;
+    left: 0% !important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
