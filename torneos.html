@@ -5,17 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/a6bec1c4ef2d2fd1bac5a6951f5f32a3?family=American+Captain" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/controlador.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
-  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/myjs.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    
+    <script src="assets/js/main.js"></script>
     <title>Torneos</title>
 </head>
 <body class="text-white">
@@ -62,7 +59,7 @@
               <a class="nav-link" href="#resultados">Resultados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Calendario</a>
+              <a class="nav-link" href="#calendario">Calendario</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#torneos-pasados" tabindex="-1" aria-disabled="true">Torneos Pasados</a>
@@ -76,8 +73,8 @@
       <h4 class="text-center title">Categorías</h4>
         <div class="row g-2">
             <article class="col-12 col-md-6">
-                <div class="card ">
-                    <img src="assets/img/escuela.png" class="card-img-top vh-50 object-fit-cover" alt="Escuela">
+                <div class="card">
+                    <img src="assets/img/escuela_2.svg" class="card-img-top vh-50 object-fit-cover" alt="Escuela">
                     <div class="text-center d-flex justify-content-center">
                             <a href="#" id="categories" class="p-3 w-50 card-link text-primary text-uppercase fw-bold text-decoration-none">outdoor</a>
                             <a href="#" id="categories" class="p-3 w-50 card-link text-primary text-uppercase fw-bold text-decoration-none">indoor</a>
@@ -86,7 +83,7 @@
             </article>
             <article class="col-12 col-md-6">
                 <div class="card ">
-                    <img src="assets/img/senior-master.png" class="card-img-top vh-50 object-fit-cover" alt="Escuela">
+                    <img src="assets/img/senior-master_1.svg" class="card-img-top vh-50 object-fit-cover" alt="Escuela">
                     <div class="text-center d-flex justify-content-center">
                             <a href="#" id="categories" class="p-3 w-50 card-link text-primary text-uppercase fw-bold text-decoration-none">outdoor</a>
                             <a href="#" id="categories" class="p-3 w-50 card-link text-primary text-uppercase fw-bold text-decoration-none">indoor</a>
@@ -197,17 +194,11 @@
     </section>
     <!--/Resultados-->
 
-<!--Calendar
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center mb-5">
-          <h2 class="heading-section">Calendar #06</h2>
-          <p>Escribi lo que quieras</p>
-        </div>
-      </div>
+<!--Calendar-->
+<section class="container-xl section" id="calendario">
+  <h4 class="text-center title">Calendario</h4>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-12 col-md-6 mb-3">
           <div class="calendar">
             <div class="header">
               <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
@@ -224,17 +215,30 @@
             </div>
           </div>
         </div>
+
+        <div class="col-12 col-md-6">
+          <h5>Inicio clases Nivel 1</h5>
+          <p><span>03/06/2021</span></p>
+          <p class="py-2 py-md-4">El aprendizaje comienza por el Nivel 1 (N1) cuya estrategia es aprender la técnica básica de manejo del equipo, postura, etc, de forma que el uso del mismo no constituya un riesgo para el arquero ni para los demás.</p>
+          <div class="d-flex d-md-block justify-content-center">
+            <button type="button" class="btn btn-primary px-3 float-end btn-full" data-mdb-ripple-color="#ffffff">Ver Curso</button>
+          </div>
+        </div>
       </div>
-    </div>
+
   </section>
 <!--/Calendar-->
 
 
- <!--Carousel bien-->
+ <!--Carousel-->
  <section class="container-xxl section" id="resultados">
-   <div class="d-flex justify-content-center position-relative">
-     <h4 class="text-center title">torneos pasados</h4>
-     <a href="#" class="ver-mas">Ver más</a>
+   <div class="row">
+     <di class="col-8 col-sm-8 col-md-7">
+       <h4 class="float-end title">torneos pasados</h4>
+     </di>
+     <div class="col-4 col-md-5">
+       <a href="#" class="ver-mas"><i class="bi bi-plus"></i></a>
+     </div>
    </div>
    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -284,111 +288,26 @@
     </button>
   </div>
  </section>  
- <!--Carousel bien-->
+ <!--Carousel-->
  
-
-  <!--Carousel prueba
-  <section class="container-xxl section" id="resultados">
-    <div class="d-flex justify-content-center position-relative">
-      <h4 class="text-center title">torneos pasados</h4>
-      <a href="#" class="ver-mas">Ver más</a>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-     <div class="carousel-indicators">
-       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-     </div>
-     <div class="carousel-inner row">
-       <div class="col-4">
-         <div class="carousel-item col-4 active" href="#">
-           <a href="#" class="">
-             <img src="assets/img/clase.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">  
-             <h4>segundo torneo aire libre</h4>
-           </div>
-         </div>
-       </div>
-       <div class="col-4">
-         <div class="carousel-item col-4 active">
-           <a href="#" class="">
-             <img src="assets/img/ganador torneo.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">
-             <h4>torneo de ranking mundial chile</h4>
-           </div>
-         </div>
-       </div>
-       <div class="col-4">
-         <div class="carousel-item col-4 active">
-           <a href="#" class="">
-             <img src="assets/img/curso2.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">
-             <h4>final nacional 3D</h4>
-           </div>
-         </div>
-       </div>
-       <div class="col-4">
-         <div class="carousel-item col-4" href="#">
-           <a href="#" class="">
-             <img src="assets/img/clase.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">  
-             <h4>segundo torneo aire libre</h4>
-           </div>
-         </div>
-       </div>
-       <div class="col-4">
-         <div class="carousel-item col-4">
-           <a href="#" class="">
-             <img src="assets/img/ganador torneo.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">
-             <h4>torneo de ranking mundial chile</h4>
-           </div>
-         </div>
-       </div>
-       <div class="col-4">
-         <div class="carousel-item col-4">
-           <a href="#" class="">
-             <img src="assets/img/curso2.jpg" class="d-block vh-50 w-100" alt="...">
-             <div class="overlay">
-             </div>
-           </a>
-           <div class="carousel-caption d-none d-md-block text-capitalize">
-             <h4>final nacional 3D</h4>
-           </div>
-         </div>
-       </div>
-     </div>
-     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Previous</span>
-     </button>
-     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Next</span>
-     </button>
-   </div>
-  </section>  
-  <!--Carousel prueba-->
-
-
 <!--Footer-->
 <footer class="bg-secondary">
   <div class="container-xxl mt-2 mt-sm-4 mt-lg-6 p-3 p-sm-5 px-2 px-lg-4 text-center text-sm-start">
+    <div class="social-media-container row d-flex justify-content-between">
+      <div class="col-8 social-media text-center d-none d-lg-block">
+        <ul>
+          <li class="me-2 social-media">
+            <a href="https://www.instagram.com/cuarq_oficial/"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="me-2 social-media float-start">
+            <a href="https://www.instagram.com/cuarq_oficial/"><i class="bi bi-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-2 social-media">
+        <a href="#" class="btn btn-light float-end"><i class="bi bi-chevron-up fs-5"></i></a>
+      </div>
+    </div>
     <section class="row justify-content-between">
       <div class="col-12 col-sm-8 col-md-12 col-lg-8">
         <div class="row justify-content-sm-between justify-content-start">
@@ -415,16 +334,7 @@
                   <li><p>Sector norte del Parque Roosevelt</p></li>
               </ul>
           </div>
-          <div class="social-media text-center d-none d-lg-block">
-            <ul>
-              <li class="me-2 social-media">
-                <a href="https://www.instagram.com/cuarq_oficial/"><i class="bi bi-instagram"></i></a>
-              </li>
-              <li class="me-2 social-media float-start">
-                <a href="https://www.instagram.com/cuarq_oficial/"><i class="bi bi-facebook"></i></a>
-              </li>
-            </ul>
-          </div>
+
         </div>
         </div>
         <div class="col-12 col-lg-4">

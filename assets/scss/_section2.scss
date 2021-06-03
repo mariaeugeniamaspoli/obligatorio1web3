@@ -1,7 +1,14 @@
 .section-2{
     background-image: url("../assets/img/bg-section2.svg");
     background-size: cover;
-//    height: 50vh;
+
+    .link{
+        @extend .d-flex;
+        @extend .flex-column; 
+        @extend .align-items-center; 
+        @extend .justify-content-center; 
+        @extend .text-center;
+    }
 
     a{
     text-decoration: none;
@@ -21,3 +28,4 @@
     }
     
 }
+

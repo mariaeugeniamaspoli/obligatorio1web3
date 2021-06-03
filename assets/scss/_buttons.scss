@@ -18,13 +18,12 @@
     .ver-mas{
         @extend .btn;
         @extend .btn-light;
-        @extend .position-absolute;
-        right: 0;
+        @extend .float-end;
     }
 }
 
 @media (max-width: 576px) { 
-    .btn-lg {
+    .btn-full  {
     width: 95% !important;
     }
 }

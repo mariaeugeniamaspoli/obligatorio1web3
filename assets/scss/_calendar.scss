@@ -62,22 +62,12 @@
 	padding:15px;
 	width:inherit;
 	height:inherit;
-	background:red;
 	position:absolute;
 	backface-visibility:visible;
 	transition:all .4s ease-in-out 0s;
 	box-shadow:0 6px 20px 0 rgba(0,0,0,.01),0 8px 17px 0 rgba(0,0,0,.2);
 }
-.months[data-flow="left"]{
-	.month{
-		transform:rotateY(-180deg);
-	}
-}
-.months[data-flow="right"]{
-	.month{
-		transform:rotateY(180deg);
-	}
-}
+
 
 .table{
 	width:100%;
@@ -244,14 +234,14 @@
 }
 
 [data-theme="june"]{
-	background-color:#FFAB91;
+	background-color:$primary;
 }
 [data-theme="june"] .row.head{
-	color:#F4511E;
+	color:$primary;
 }
 [data-theme="june"] .header .text,
 [data-theme="june"] .table .row .cell.active span{
-	background-color:#F4511E;
+	background-color:$primary;
 }
 
 [data-theme="july"]{

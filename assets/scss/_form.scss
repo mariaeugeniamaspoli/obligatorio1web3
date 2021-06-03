@@ -1,4 +1,13 @@
+.prueba{
+  position: absolute;
+}
 
+#togglePassword {
+  margin-left: -30px;
+  cursor: pointer;
+  color: red;
+  display: list-item;
+}
 
 @mixin make-container() {
     max-width: 500px;
@@ -10,7 +19,6 @@
     @extend .flex-column;
     @extend .mx-auto;
     @extend .my-md-6;
-    @extend .my-2;
   }
   
   .custom-container {
