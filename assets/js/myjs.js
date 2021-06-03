@@ -22,4 +22,8 @@ function inicio(){
       nav.classList.remove('bg-secondary', 'shadow', 'o-95');
     }
   });
+
+  
+
+  
 }

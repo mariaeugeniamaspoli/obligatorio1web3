@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/controlador.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/bootstrap.bundle.min.js" defer></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/myjs.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -51,52 +51,6 @@
   </header>
     <!--/Header-->
 
-
-    <!--Slider-->
-    <section class="container-xl mt-lg-5">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="assets/img/clase.jpg" alt="First slide">
-              <div class="carousel-caption d-none d-md-block text-start px-4 py-3">
-                <h5>Tiro a blanco 3D</h5>
-                <p>Pondremos a prueba las habilidades dde los participantes en objetos 3D</p>
-                <a href="#" class="btn btn-lg btn-primary">Ver Torneo</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/img/torneo2.jpg" alt="Second slide">
-              <div class="carousel-caption d-none d-md-block text-start px-4 py-3">
-                <h5>Evento</h5>
-                <p>Pondremos a prueba las habilidades dde los participantes en objetos 3D</p>
-                <a href="#" class="btn btn-lg btn-primary">Ver Torneo</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="assets/img/torneo3.Evento" alt="Third slide">
-              <div class="carousel-caption d-none d-md-block text-start px-4 py-3">
-                <h5>Evento</h5>
-                <p>Pondremos a prueba las habilidades dde los participantes en objetos 3D</p>
-                <a href="#" class="btn btn-lg btn-primary">Ver Torneo</a>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
-        </div>
-      </section>
-    <!--/Slider-->
 
     <!--Second navbar-->
     <nav class="navbar nav-pills nav-fill bg-light" id="second-navbar">
@@ -243,7 +197,7 @@
     </section>
     <!--/Resultados-->
 
-<!--Calendar-->
+<!--Calendar
   <section class="ftco-section">
     <div class="container">
       <div class="row justify-content-center">
@@ -275,45 +229,163 @@
   </section>
 <!--/Calendar-->
 
-<!--Eventos pasados-->
-<section class="container-xl section" id="torneos-pasados">
-  <h4 class="text-center title">Eventos pasados</h4>
-  <div class="row g-2">
-    <article class="col-12 col-md-4">
-      <div class="card">
-        <img src="assets/img/resultados.jpg" class="card-img-top vh-30" alt="...">
-        <div class="card-body">
-          <h5>Evento 1</h5>
-          <h6>20/05/2021</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+ <!--Carousel bien-->
+ <section class="container-xxl section" id="resultados">
+   <div class="d-flex justify-content-center position-relative">
+     <h4 class="text-center title">torneos pasados</h4>
+     <a href="#" class="ver-mas">Ver más</a>
+   </div>
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" href="#">
+        <a href="#" class="">
+          <img src="assets/img/clase.jpg" class="d-block vh-50 w-100" alt="...">
+          <div class="overlay">
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block text-capitalize">  
+          <h4>segundo torneo aire libre</h4>
         </div>
       </div>
-    </article>
-    <article class="col-12 col-md-4">
-      <div class="card">
-        <img src="assets/img/blanco.jpg" class="card-img-top vh-30" alt="...">
-        <div class="card-body">
-          <h5>Evento 1</h5>
-          <h6>20/05/2021</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="carousel-item">
+        <a href="#" class="">
+          <img src="assets/img/ganador torneo.jpg" class="d-block vh-50 w-100" alt="...">
+          <div class="overlay">
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block text-capitalize">
+          <h4>torneo de ranking mundial chile</h4>
         </div>
       </div>
-    </article>
-    <article class="col-12 col-md-4">
-      <div class="card">
-        <img src="assets/img/indoor.jpg" class="card-img-top vh-30" alt="...">
-        <div class="card-body">
-          <h5>Evento 1</h5>
-          <h6>20/05/2021</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="carousel-item">
+        <a href="#" class="">
+          <img src="assets/img/curso2.jpg" class="d-block vh-50 w-100" alt="...">
+          <div class="overlay">
+          </div>
+        </a>
+        <div class="carousel-caption d-none d-md-block text-capitalize">
+          <h4>final nacional 3D</h4>
         </div>
       </div>
-    </article>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  </div>
-</section>
-<!--/Eventos pasados-->
-  
+ </section>  
+ <!--Carousel bien-->
+ 
+
+  <!--Carousel prueba
+  <section class="container-xxl section" id="resultados">
+    <div class="d-flex justify-content-center position-relative">
+      <h4 class="text-center title">torneos pasados</h4>
+      <a href="#" class="ver-mas">Ver más</a>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner row">
+       <div class="col-4">
+         <div class="carousel-item col-4 active" href="#">
+           <a href="#" class="">
+             <img src="assets/img/clase.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">  
+             <h4>segundo torneo aire libre</h4>
+           </div>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="carousel-item col-4 active">
+           <a href="#" class="">
+             <img src="assets/img/ganador torneo.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">
+             <h4>torneo de ranking mundial chile</h4>
+           </div>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="carousel-item col-4 active">
+           <a href="#" class="">
+             <img src="assets/img/curso2.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">
+             <h4>final nacional 3D</h4>
+           </div>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="carousel-item col-4" href="#">
+           <a href="#" class="">
+             <img src="assets/img/clase.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">  
+             <h4>segundo torneo aire libre</h4>
+           </div>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="carousel-item col-4">
+           <a href="#" class="">
+             <img src="assets/img/ganador torneo.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">
+             <h4>torneo de ranking mundial chile</h4>
+           </div>
+         </div>
+       </div>
+       <div class="col-4">
+         <div class="carousel-item col-4">
+           <a href="#" class="">
+             <img src="assets/img/curso2.jpg" class="d-block vh-50 w-100" alt="...">
+             <div class="overlay">
+             </div>
+           </a>
+           <div class="carousel-caption d-none d-md-block text-capitalize">
+             <h4>final nacional 3D</h4>
+           </div>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+  </section>  
+  <!--Carousel prueba-->
+
+
 <!--Footer-->
 <footer class="bg-secondary">
   <div class="container-xxl mt-2 mt-sm-4 mt-lg-6 p-3 p-sm-5 px-2 px-lg-4 text-center text-sm-start">

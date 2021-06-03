@@ -1,5 +1,5 @@
 body{
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Rubik', sans-serif !important;
     color: white !important;
     background-color: $body-bg-color !important;
 }
@@ -22,12 +22,15 @@ h5{
 }
 
 .section{
-   @extend .mt-5; 
-   @extend .mt-lg-5;
+   @extend .mt-4; 
+   @extend .mt-md-5;
+   @extend .mt-lg-6;
 }
 
 .title{
-   margin-bottom: $spacer;
+   @extend .mb-2;
+   @extend .mb-md-4;
+   @extend .text-capitalize;
 }
 
 img{
